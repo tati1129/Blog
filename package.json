@@ -1,7 +1,6 @@
 {
-  "homepage": "https://tati1129.github.io/Blog/",
+  "homepage": "https://tati1129.github.io/Blog",
   "name": "blog",
-  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -59,6 +58,8 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
@@ -134,5 +135,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
