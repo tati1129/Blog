@@ -1,0 +1,22 @@
+{
+    "parts": [
+        {
+            "id": 1,
+            "part": "Вводные занятия по React",
+            "task": 10,
+            "category": "Frontend Pro"
+          },
+        {
+            "id": 2,
+            "part": "Использование React хуков",
+            "task": 5,
+            "category": "Frontend Pro"
+        },
+        {
+            "id": 3,
+            "part": "Использование библиотеки react-router-dom",
+            "task": 15,
+            "category": "Frontend Pro"
+        }
+    ]
+}

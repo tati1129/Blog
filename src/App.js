@@ -1,21 +1,25 @@
-
+import './App.css';
 import Header from "./components/Header/Header"
 import Content from "./components/Content/Content"
-import Total from "./components/Total/Total"
+import Note from './components/Note/Note';
+import { Route, Routes } from 'react-router-dom';
+import About from './components/About/About';
+import Contacts from './components/Contacts/Contacts';
 
 const App = () => {
-  const course = 'Frontend Pro';
-  const part1 = 'Вводные занятия по React'
-  const tasks1 = 10;
-  const part2 = 'Использование React хуков'
-  const tasks2 = 5;
-  const part3 = 'Использование библиотеки react-router-dom'
-  const tasks3 = 15;
+ 
   return (
-    <div>
-      <Header course={course} />
-      <Content part1={part1} part2={part2} part3={part3} tasks1={tasks1} tasks2={tasks2} tasks3={tasks3}/>
-      <Total  tasks1={tasks1} tasks2={tasks2} tasks3={tasks3}/>
+    <div className="App"> 
+      <Header />
+     
+      <Routes>
+        <Route element={<Content />} path='/' />
+        <Route element={<About />} path='/about' />
+        <Route element={<Contacts />} path='/contacts' />
+        <Route element={ <img src="https://geekflare.com/wp-content/uploads/2019/01/The-Front-End-Spectrum-1076x628.png" alt="" /> } path='/about/info' />
+      </Routes>
+      
+      
     </div>
   );
 }

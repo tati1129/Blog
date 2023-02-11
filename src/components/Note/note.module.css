@@ -1,0 +1,13 @@
+.note{
+    width: 20%;
+    height: 200px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+.category{
+font-size: 25px;
+}
+.title{
+font-size: 15px;
+}
